@@ -1,10 +1,10 @@
 import React from "react";
 
-function Header() {
+function Header(props) {
   return (
     <header>
-      <h1></h1>
-      <h2></h2>
+      <h1>{props.name}</h1>
+      <h2>{props.todaysDate}</h2>
     </header>
   );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 
-function Aside() {
+function Aside({ dogs }) {
   return (
     <aside>
       <h3>Roster:</h3>
-      <ol></ol>
+      <ol>{dogs.map((dog) => (dog.present ? <li>{dog.name}</li> : null))}</ol>
     </aside>
   );
 }
